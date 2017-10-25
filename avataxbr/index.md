@@ -24,13 +24,6 @@ doctype: overview
      <h4 class="text-left">Ready to take the final step? Certify your integration to receive sales and marketing support from Avalara.
      </h4>
   </div>
-  <div class="col-md-8 col-md-offset-2 text-center">
-    <h1 class="h1p">AvaTax API References</h1>
-     <h2>From here you can navigate the various endpoints associated with AvaTax Brazil APIs. The URL's for our Brazil API services are:</h2>
-     <h4 class="text-left">•	Sandbox: <a href="https://avataxbr-sandbox.avalarabrasil.com.br:8000/docs/index/view"> https://avataxbr-sandbox.avalarabrasil.com.br:8000/docs/index/view</a></h4>
-     <h4 class="text-left">•	Production: <a href="https://rest.avatax.com">https://rest.avatax.com</a></h4>
-  </div>
-
 
 </div>
 <div class="row border-top padding-top padding-bottom">
@@ -44,7 +37,7 @@ doctype: overview
     <div class="row card">
         <div class="col-md-3 col-md-offset-2 padding-top">
             <ul class="pipe">
-                <li><a href="api-reference/tax/v2/transactions">API references</a></li>
+                <li><a href="/api-reference/avataxbr/index/models/">API references</a></li>
             </ul>
         </div>
     </div>
