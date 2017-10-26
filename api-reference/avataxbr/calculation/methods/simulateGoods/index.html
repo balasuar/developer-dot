@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="robots" content="index,follow" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simulateGoods | Calculation | Avalara Developer</title>
+
+    
+    <meta name="description" content="API solutions for end-to-end tax compliance">
+
+    
+    <meta property="og:title" content="simulateGoods | Calculation | Avalara Developer" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://developer.avalara.com/" />
+    <meta property="og:site_name" content="Avalara Developer Network" />
+    <meta property="og:description" content="Simulate Method"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/developer-dot/public/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/developer-dot/public/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/developer-dot/public/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/developer-dot/public/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/developer-dot/public/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/developer-dot/public/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/developer-dot/public/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/developer-dot/public/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/developer-dot/public/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/developer-dot/public/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/developer-dot/public/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/developer-dot/public/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/developer-dot/public/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/developer-dot/public/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff ">
+    <meta name="msapplication-TileImage" content="/developer-dot/public/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff ">
+
+    <link rel="stylesheet" href="/developer-dot/public/css/style.css"> 
+    <!-- Adobe Dynamic Tab Manager Tag Manager -->
+    <script src="https://assets.adobedtm.com/bc10a2a9cf337c664f8f74e778a1987125aea184/satelliteLib-0387aefee1ddb8b2a9db7e4165c8d84dc0de8621.js"></script>
+    <!-- End Adobe Dynamic Tab Manager Tag Manager -->
+</head>
+ 
+
+<body id="top" data-product=avaTaxBr>
+    <header>
+        <div class="pageTitle">
+            <a href="/developer-dot/">
+                <img src="/developer-dot/public/images/Avalara_logo.svg" alt="Avalara Developer Network">
+                <span>Developer</span>
+            </a>
+            <span class="slash">/&nbsp;</span><a href="/developer-dot/avataxbr">avaTaxBr</a>
+        </div>
+        <nav class="navbar navbar-default navbar-static">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                <span>Menu</span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse js-navbar-collapse">
+                <ul class="nav navbar-nav apis ">
+                    <li class="apis visible-xs-block"><a href="/developer-dot/avalara-apis"><span class="text-uppercase">API</span>s</a></li>
+                    <li class="visible-xs-block"><a href="/developer-dot/avatax/dev-guide/"><span class="text-uppercase">AvaTax Developer Guide</span></a></li>
+                    <li class="apis dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">API</span>s <i class="caret"></i></a>
+                        <div class="dropdown-menu dropdown-menu-large">
+                            <div class="row">
+                                <div class="col-md-12"><a href="/developer-dot/avalara-apis">APIs overview</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2>Tax calculation</h2>
+                                    
+                                    <h4>Avalara AvaTax</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/avatax">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/avatax/use-cases">Use cases</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/avatax/rest/v2">API reference</a></li>
+                                        
+                                        <br/>
+                                        <li><a href="/developer-dot/avatax/dev-guide/">Developer Guide</a></li>
+                                        <li><a href="/developer-dot/avatax/get-started">Set up your AvaTax sandbox</a></li>
+                                    </ul>
+                                     
+                                    <h4>Avalara Communications</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/communications">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/communications/afc-rest">API reference</a></li>
+                                        
+                                    </ul>
+                                     
+                                    <h4>Avalara Excise</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/excise">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/excise/5_18_0">API reference</a></li>
+                                        
+                                    </ul>
+                                     
+                                    <h4>Avalara LandedCost</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/landedcost">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/landedcost">API reference</a></li>
+                                        
+                                    </ul>
+                                     
+                                    <h4>Avalara AvaTax Brazil</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/avataxbr">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/avataxbr/index/models">API Reference</a></li>
+                                        
+                                        <li><a href="/developer-dot/avataxbr/clients">Clients</a></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                                <div class="col-sm-6">
+                                    <h2>Compliance document management</h2>
+                                    
+                                    <h4>Avalara CertCapture</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/certcapture">Overview</a></li>
+                                        
+                                        <li><a href="http://docs.certcapture6xrest.apiary.io/">API reference</a></li>
+                                        
+                                    </ul>
+                                    
+                                    <h2>Returns &amp; filing</h2>
+                                     
+                                    <h4>Avalara TrustFile</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/trustfile">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/trustfile/api">API reference</a></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sdk dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">SDK</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li ><a href="/developer-dot/avatax/get-started">Get Started with AvaTax</a></li>
+                            <br/>
+                            <li><a href="/developer-dot/sdk/">The AvaTax SDK</a></li>
+                            <li><a href="/developer-dot/sdk/soap">SOAP SDK</a></li>
+                            <br/>
+                            <li><a target="_blank" href="https://www.nuget.org/packages/Avalara.AvaTax/">Install C# SDK via NuGet</a></li>
+                            <li><a target="_blank" href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22net.avalara.avatax%22">Install JRE SDK via Maven</a></li>
+                            <li><a target="_blank" href="https://packagist.org/packages/avalara/avataxclient">Install PHP SDK via Composer</a></li>
+                            <li><a target="_blank" href="https://rubygems.org/gems/avatax">Install Ruby SDK via RubyGems</a></li>
+                            <li><a target="_blank" href="https://www.npmjs.com/package/avatax">Install JavaScript SDK via NPMJS</a></li>
+                        </ul>
+                    </li>
+                    <li class="tests"><a href="/developer-dot/tests/testing-your-integration/"><span class="text-uppercase">Tests</span></a></li>
+                    <!-- removing until the link to the Self-Test is fugured out -->
+                    <!--
+                    <li class="tests dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">Tests</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li><a href="/developer-dot/tests/self-test">Avalara Self-Test Tool</a></li>
+                            <li><a href="/developer-dot/tests/testing-your-integration/">Avalara Test Cases</a></li>
+                        </ul>
+                    </li> -->
+
+                    <li class="certification dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggel" data-toggle="dropdown"><span class="text-uppercase">Become Certified</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li><a href="/developer-dot/certification/">Overview</a></li>
+                            <li><a href="/developer-dot/certification/avatax/">Avalara AvaTax</a></li>
+                            <li><a href="/developer-dot/certification/communications-certification/">Avalara Communications</a></li>
+                            <li><a href="/developer-dot/certification/excise/">Avalara Excise</a></li>
+                            <li><a href="/developer-dot/certification/certcapture/">Avalara CertCapture</a></li>
+                        </ul>
+                    </li>
+                    <li class="resources dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">Resources</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li><a href="/developer-dot/blog">Developer Blog</a></li>
+                            <!--<li><a href="/developer-dot/resources/preferred-developers">Preferred developers</a></li>-->
+                            <li><a href="https://community.avalara.com/avalara/category_sets/developers">Help Forum</a></li>
+                            <li><a href="http://www.info.avalara.com/avalaradevcentral">Developer Webinar Series</a></li>
+                            <li><a href="https://avalaracommunity.force.com/partnerlaunch" target="_blank">Avalara Launch Center</a></li>
+                        </ul>
+                    </li>
+                    <li class="resources visible-xs-block"><a href="/developer-dot/blog"><span class="text-uppercase">Developer Blog</span></a></li>
+                    <li class="resources visible-xs-block"><a href="/developer-dot/resources/preferred-developers"><span class="text-uppercase">Preferred developers</span></a></li>
+                    <li class="resources visible-xs-block"><a href="https://community.avalara.com/avalara/category_sets/developers"><span class="text-uppercase">Help Forum</span></a></li>
+                    <li class="resources visible-xs-block"><a href="/developer-dot/search"><span class="text-uppercase">Search</span></a></li>
+                    <li class="hdr-search-icon hidden-xs">
+                        <i class="mouse glyphicon glyphicon-search mouse"></i>
+                    </li>
+                    <form class="hdr-search-form horizontal hidden-xs hidden">
+                        <div class="row">
+                            
+                            <div class="col-md-9"><label><input type="checkbox" id="filterSite"> Search entire site</label></div>
+                            <div class="col-md-3">
+                                <button type="button" class="close" aria-label="Close"><span>&times;</span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-9">
+                                <input class="form-control" type="search" placeholder="Search Developer / Avataxbr" >
+                                <span class="form-control-feedback">!</span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <input type="submit" class="btn btn-primary" value="Search">
+                            </div>
+                        </div>
+                    </form>
+                </ul>
+
+                
+                <a href="https://developer.avalara.com/avatax/signup/" class="btn btn-primary btn-signup">Sign up</a>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid api_references">
+        
+          
+
+
+<div class="breadcrumbs">
+    <div class="col-md-12">
+        <ul class="pipe">
+            <li><span class="text-uppercase">Tax Calculation API</span>s</li>
+            <li class="text-uppercase"><a href="/developer-dot/avataxbr">Avalara avaTaxBr</a></li>
+            <li class="text-uppercase">api reference</li>
+        </ul>
+    </div>
+</div>
+  
+        <section class="row padding-sides">
+            <nav class="col-md-3 api-ref">
+                 <div id='the-nav' class='nav-wrapper hidden-xs hidden-sm api-ref-nav' style='height: 100%; overflow-y: auto;'>
+    <ul class='api-ref-side-nav nav nav-pills nav-stacked'>
+        
+        
+
+        
+        
+
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/transaction">Transaction</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/auth">Auth</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/calculation">Calculation</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                        
+                            <div style="padding-left:10px;">
+    <ul class='api-ref-side-nav-active nav nav-pills nav-stacked sub-nav'>
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/calculationServicePayment">calculationServicePayment</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/calculationServicePurchase">calculationServicePurchase</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/calculationServiceReceipt">calculationServiceReceipt</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/calculationServiceSales">calculationServiceSales</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/convertGoodsCalculationToTransaction">convertGoodsCalculationToTransaction</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/convertServiceCalculationToTransaction">convertServiceCalculationToTransaction</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/createATaxTransactionGood">createATaxTransactionGood</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/createATaxTransactionServicePayment">createATaxTransactionServicePayment</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/createATaxTransactionServicePurchase">createATaxTransactionServicePurchase</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/createATaxTransactionServiceReceipt">createATaxTransactionServiceReceipt</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/createATaxTransactionServiceSales">createATaxTransactionServiceSales</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/createCalculationGood">createCalculationGood</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/removeGoodsTransactionDocument">removeGoodsTransactionDocument</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/removeServiceTransactionDocument">removeServiceTransactionDocument</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/retrieveGoodsTransactionDocument">retrieveGoodsTransactionDocument</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/retrieveGoodsTransactions">retrieveGoodsTransactions</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/retrieveServiceCalculationTransactions">retrieveServiceCalculationTransactions</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/retrieveServiceTransactionDocument">retrieveServiceTransactionDocument</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/simulateGoods">simulateGoods</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/simulateServicePayment">simulateServicePayment</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/simulateServicePurchase">simulateServicePurchase</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/simulateServiceReceipt">simulateServiceReceipt</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+                <li><a style="overflow: hidden" href="/developer-dot/api-reference/avataxbr/calculation/methods/simulateServiceSales">simulateServiceSales</a></li>
+                
+            
+        
+            
+            
+            
+
+            
+            <li><a style="color:#ff6600; overflow: hidden;" href="/developer-dot/api-reference/avataxbr/calculation/models">Models</a></li>
+            
+        
+    </ul>
+</div>
+
+                        
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/compliance">Compliance</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/configuration">Configuration</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/documents">Documents</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/common">Common</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/invoice">Invoices</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+
+        
+    </ul>
+</div>
+ 
+            </nav>
+            <main class="col-md-9 small-no-padding"><div id="api-console"></div>
+<script>
+    
+    window.modelsPath = 'api-reference/avataxbr/calculation/models';
+    window.__INITIAL_STATE__ = {"tagMap":null,"apiName":"AvaTax Brazil","apiDescription":"The Avatax-Brazil API exposes the most commonly services available for interacting with the AvaTax-Brazil services, allowing calculation of taxes, issuing electronic invoice documents and modifying existing transactions when allowed by tax authorities.  This API is exclusively for use by business with a physical presence in Brazil.","apiType":"SOAP","sampleAuthHeader":null,"sampleContentType":["application/json"],"auth":null,"apiEndpoints":[{"operationId":"simulateGoods","name":"Simulate Method","description":"This operation uses minimum set of attributes for calculate the taxes. This operation do not store the messages.","path":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations?goods","action":"post","sampleAuthHeader":null,"showExcludedPostBodyFields":false,"apiConsoleLoading":false,"requestInput":"{}","requestSchema":{"required":false,"isExcluded":false,"header":{"required":true,"isExcluded":false,"participants":{"required":false,"isExcluded":false,"entity":{"required":false,"isExcluded":false,"name":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity name, official name (Razão Social)"},"role":{"fieldType":"string","required":false,"isExcluded":false,"description":"- 'transporter'\n- 'sender' # REMETENTE\n- 'dispatcher' # EXPEDITOR\n- 'receiver' # RECEIVER\n- 'addressee' # DESTINATÁRIO\n- 'other' # OUTRO\n","enum":["transporter","sender","dispatcher","receiver","addressee","other"]},"type":{"fieldType":"string","required":true,"isExcluded":false,"description":"Entity Type (business, individual, federal government, state government, city government, foreign)","enum":["business","individual","federalGovernment","stateGovernment","cityGovernment","foreign"]},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"CNPJ/CPF of Sales Buyer, if CPF pattern is '[0-9]{11}' if CNPJ pattern is '[0-9]{14}'"},"cityTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"City Tax ID"},"stateTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"State Tax ID"},"suframa":{"fieldType":"string","required":false,"isExcluded":false,"description":"Suframa ID"},"phone":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Phone"},"taxRegime":{"fieldType":"string","required":false,"isExcluded":false,"enum":["realProfit","estimatedProfit","simplified","simplifiedOverGrossthreshold","simplifiedEntrepreneur","notApplicable","individual"]},"email":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Email"},"subjectToSRF1234":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Companies subject to follow same rules of Government entities (Instrução Normativa SRF1234)"},"subjectToPayrollTaxRelief":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Sujeito à desoneração de folha de pagamento."},"icmsTaxPayer":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform if the entity is ICMS tax payer."}},"transporter":{"required":false,"isExcluded":false,"name":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity name, official name (Razão Social)"},"role":{"fieldType":"string","required":false,"isExcluded":false,"description":"- 'transporter'\n- 'sender' # REMETENTE\n- 'dispatcher' # EXPEDITOR\n- 'receiver' # RECEIVER\n- 'addressee' # DESTINATÁRIO\n- 'other' # OUTRO\n","enum":["transporter","sender","dispatcher","receiver","addressee","other"]},"type":{"fieldType":"string","required":true,"isExcluded":false,"description":"Entity Type (business, individual, federal government, state government, city government, foreign)","enum":["business","individual","federalGovernment","stateGovernment","cityGovernment","foreign"]},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"CNPJ/CPF of Sales Buyer, if CPF pattern is '[0-9]{11}' if CNPJ pattern is '[0-9]{14}'"},"cityTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"City Tax ID"},"stateTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"State Tax ID"},"suframa":{"fieldType":"string","required":false,"isExcluded":false,"description":"Suframa ID"},"phone":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Phone"},"taxRegime":{"fieldType":"string","required":false,"isExcluded":false,"enum":["realProfit","estimatedProfit","simplified","simplifiedOverGrossthreshold","simplifiedEntrepreneur","notApplicable","individual"]},"email":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Email"},"subjectToSRF1234":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Companies subject to follow same rules of Government entities (Instrução Normativa SRF1234)"},"subjectToPayrollTaxRelief":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Sujeito à desoneração de folha de pagamento."},"icmsTaxPayer":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform if the entity is ICMS tax payer."}}},"eDocCreatorType":{"fieldType":"string","required":true,"isExcluded":false,"enum":["self","other"]},"eDocCreatorPerspective":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"This Flag is used only when eDocCreatorType is other and the return show Taxes using eDocCreator perspective or self perspective."},"companyLocation":{"fieldType":"string","required":true,"isExcluded":false,"description":"This string contains a previously configured company code which may also have codes needed for tax return purposes. These codes are maintained through the customer portal. Main company address identity"},"transactionDate":{"fieldType":"string","required":false,"isExcluded":false,"description":"This string is the transaction date in ISO 8601 format, create transaction date"},"defaultLocations":{"required":false,"isExcluded":false},"nfRef":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"type":{"fieldType":"string","required":false,"isExcluded":false,"enum":["refNFe","refCTE","refECF","refNF","refFarmerNF"]},"refNFe":{"fieldType":"string","required":false,"isExcluded":false},"refCTe":{"fieldType":"string","required":false,"isExcluded":false},"refECF":{"required":false,"isExcluded":false,"nECF":{"fieldType":"string","required":true,"isExcluded":false,"description":"ECF Sequential number that generated Cupom attached to NFe\ninformar o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal vinculado à NF-e\n"},"nCOO":{"fieldType":"string","required":true,"isExcluded":false,"description":"Operational counter number attached to NFe\nInformar o Número do Contador de Ordem de Operação - COO vinculado à NF-e\n"},"modECF":{"fieldType":"string","required":true,"isExcluded":false,"description":"Fiscal document model\n- '2B' # coupon tax not ECF\n- '2C' # PDV coupon tax\n- '2D' # ECF coupon tax\n","enum":["2B","2C","2D"]}},"refNF":{"required":false,"isExcluded":false,"stateCd":{"fieldType":"string","required":true,"isExcluded":false,"description":"State code of fiscal Document creator","enum":["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]},"yymm":{"fieldType":"string","required":true,"isExcluded":false,"description":"year and month of fiscal document creation"},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document creator federalTaxId"},"serie":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document serie"},"number":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document number"}},"refFarmerNF":{"required":false,"isExcluded":false,"stateCd":{"fieldType":"string","required":true,"isExcluded":false,"description":"State code of fiscal Document creator, farmer","enum":["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]},"yymm":{"fieldType":"string","required":true,"isExcluded":false,"description":"year and month of fiscal document creation"},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document creator farmer federalTaxId"},"stateTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document creator, farmer stateTaxId"},"model":{"fieldType":"string","required":true,"isExcluded":false,"description":"Document Fiscal model\n- '04' # FARMER DOCUMENT\n- '01' # DETACHED DOCUMENT - AVULSO\n","enum":["04","01"]},"serie":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document serie"},"number":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document number"}}}}},"lines":{"fieldType":"array","required":true,"isExcluded":false,"items":{"required":false,"isExcluded":false,"lineCode":{"fieldType":"integer","required":true,"isExcluded":false,"description":"This is unique identifier for this line in the transaction"},"itemCode":{"fieldType":"string","required":true,"isExcluded":false,"description":"This string is a code maintained by the client application to uniquely identify a product or service. It will likely be a SKU and is required for SST states."},"numberOfItems":{"fieldType":"number","required":true,"isExcluded":false,"description":"This decimal 11 integers and 1 to 4 decimals captures the number of individual items or units represented by this line. Digits after the decimal point are optional. This should always be positive. Quantity, default 1","format":"double"},"lineUnitPrice":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 11 integers and 1 to 10 decimals captures the unit price of this line.","format":"double"},"lineAmount":{"fieldType":"number","required":true,"isExcluded":false,"description":"In its simplest form lineAmount = (item price * numberOfItems). If taxIncluded is 'true', lineAmount = (item price * numberOfItems + tax).","format":"double"},"lineTaxedDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"Discount conditional, This decimal 13 integers and 0 to 2 decimals","format":"double"},"lineUntaxedDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"discount unconditional, This decimal 13 integers and 0 to 2 decimals","format":"double"},"useType":{"fieldType":"string","required":true,"isExcluded":false,"description":"This is a enumeration folowing table","enum":["use or consumption","resale","agricultural production","production","use or consumption on business establishment","use or consumption on transporter service establishment","use or consumption on communication service establishment","use or consumption on demand by contract","use or consumption on energy supplier establishment","use or consumption of fuel transaction type exportation","use or consumption on services subject to iss","use or consumption on services subject to icms","fixed assets","resale export","resale icms exempt","resale buyer under the same icmsSt tax rule","transport of goods that don't need invoice (nf)"]},"processScenario":{"fieldType":"string","required":true,"isExcluded":false,"description":"Reference to process configurantion of this transaction, See ProcessScenario definition\nthis property is used only if eDocCreator=self or  eDocCreator=others and eDocCreatorPerspective=true\n"},"operationTypeReceiptMap":{"fieldType":"string","required":false,"isExcluded":false,"description":"Mapping table used to discover the CFOP when execute the Tax receipt in funciotn of CFOP Received and Item Type\nthis property is used only if eDocCreator=others and eDocCreatorPerspective=false\n"},"freightAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 13 integers and 0 to 2 decimals","format":"double"},"insuranceAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 13 integers and 0 to 2 decimals","format":"double"},"otherCostAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 13 integers and 0 to 2 decimals","format":"double"},"entityIsIcmsSubstitute":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform that for this item the Entity referenced is ICMS Substitute"},"isTransportIcmsWithheld":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform that this item has ICMS withheld for transport value service."},"icmsTaxRelief":{"required":false,"isExcluded":false,"reasonCode":{"fieldType":"string","required":true,"isExcluded":false,"description":"When item transaction subject to desoneration, this is the reason code\n- '1' # Táxi;\n- '3' # Produtor Agropecuário;\n- '4' # Frotista/Locadora;\n- '5' # Diplomático/Consular;\n- '6' # Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);\n- '7' # SUFRAMA;\n- '8' # Venda a órgão Público;\n- '9' # Outros\n- '10' # Deficiente Condutor\n- '11' # Deficiente não condutor\n- '12' # Fomento agropecuário\n- '16' # Olimpíadas Rio 2016\n","enum":["1","3","4","5","6","7","8","9","10","11","12","16"]},"taxBaseDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"ICMS Tax base rate discount  (desconto na base do ICMS referetne a desoneração)","format":"double"},"taxAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"Amount for Icms Relief (desoneração)","format":"double"}}}}},"requestSchemaWithRefs":{"name":"body","in":"body","description":"Transaction Message","required":true,"schema":{"$ref":"#/definitions/TransactionSimulationForGoodsIn"}},"postBody":{"header":{"participants":{"entity":{},"transporter":{}},"defaultLocations":{},"nfRef":[{"refECF":{},"refNF":{},"refFarmerNF":{}}]},"lines":[{"icmsTaxRelief":{}}]},"curl":"curl\n    -X POST\n    -H 'Accept: application/json'\n    -H 'Content-Type: application/json'\n    --data '{\n  \"header\": {\n    \"participants\": {\n      \"entity\": {},\n      \"transporter\": {}\n    },\n    \"defaultLocations\": {},\n    \"nfRef\": [\n      {\n        \"refECF\": {},\n        \"refNF\": {},\n        \"refFarmerNF\": {}\n      }\n    ]\n  },\n  \"lines\": [\n    {\n      \"icmsTaxRelief\": {}\n    }\n  ]\n}'\n    http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations?goods","responseSchema":{"required":false,"isExcluded":false,"header":{"required":true,"isExcluded":false,"participants":{"required":false,"isExcluded":false,"entity":{"required":false,"isExcluded":false,"name":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity name, official name (Razão Social)"},"role":{"fieldType":"string","required":false,"isExcluded":false,"description":"- 'transporter'\n- 'sender' # REMETENTE\n- 'dispatcher' # EXPEDITOR\n- 'receiver' # RECEIVER\n- 'addressee' # DESTINATÁRIO\n- 'other' # OUTRO\n","enum":["transporter","sender","dispatcher","receiver","addressee","other"]},"type":{"fieldType":"string","required":true,"isExcluded":false,"description":"Entity Type (business, individual, federal government, state government, city government, foreign)","enum":["business","individual","federalGovernment","stateGovernment","cityGovernment","foreign"]},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"CNPJ/CPF of Sales Buyer, if CPF pattern is '[0-9]{11}' if CNPJ pattern is '[0-9]{14}'"},"cityTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"City Tax ID"},"stateTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"State Tax ID"},"suframa":{"fieldType":"string","required":false,"isExcluded":false,"description":"Suframa ID"},"phone":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Phone"},"taxRegime":{"fieldType":"string","required":false,"isExcluded":false,"enum":["realProfit","estimatedProfit","simplified","simplifiedOverGrossthreshold","simplifiedEntrepreneur","notApplicable","individual"]},"email":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Email"},"subjectToSRF1234":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Companies subject to follow same rules of Government entities (Instrução Normativa SRF1234)"},"subjectToPayrollTaxRelief":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Sujeito à desoneração de folha de pagamento."},"icmsTaxPayer":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform if the entity is ICMS tax payer."}},"transporter":{"required":false,"isExcluded":false,"name":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity name, official name (Razão Social)"},"role":{"fieldType":"string","required":false,"isExcluded":false,"description":"- 'transporter'\n- 'sender' # REMETENTE\n- 'dispatcher' # EXPEDITOR\n- 'receiver' # RECEIVER\n- 'addressee' # DESTINATÁRIO\n- 'other' # OUTRO\n","enum":["transporter","sender","dispatcher","receiver","addressee","other"]},"type":{"fieldType":"string","required":true,"isExcluded":false,"description":"Entity Type (business, individual, federal government, state government, city government, foreign)","enum":["business","individual","federalGovernment","stateGovernment","cityGovernment","foreign"]},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"CNPJ/CPF of Sales Buyer, if CPF pattern is '[0-9]{11}' if CNPJ pattern is '[0-9]{14}'"},"cityTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"City Tax ID"},"stateTaxId":{"fieldType":"string","required":false,"isExcluded":false,"description":"State Tax ID"},"suframa":{"fieldType":"string","required":false,"isExcluded":false,"description":"Suframa ID"},"phone":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Phone"},"taxRegime":{"fieldType":"string","required":false,"isExcluded":false,"enum":["realProfit","estimatedProfit","simplified","simplifiedOverGrossthreshold","simplifiedEntrepreneur","notApplicable","individual"]},"email":{"fieldType":"string","required":false,"isExcluded":false,"description":"Entity Email"},"subjectToSRF1234":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Companies subject to follow same rules of Government entities (Instrução Normativa SRF1234)"},"subjectToPayrollTaxRelief":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Sujeito à desoneração de folha de pagamento."},"icmsTaxPayer":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform if the entity is ICMS tax payer."}}},"eDocCreatorType":{"fieldType":"string","required":true,"isExcluded":false,"enum":["self","other"]},"eDocCreatorPerspective":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"This Flag is used only when eDocCreatorType is other and the return show Taxes using eDocCreator perspective or self perspective."},"companyLocation":{"fieldType":"string","required":true,"isExcluded":false,"description":"This string contains a previously configured company code which may also have codes needed for tax return purposes. These codes are maintained through the customer portal. Main company address identity"},"transactionDate":{"fieldType":"string","required":false,"isExcluded":false,"description":"This string is the transaction date in ISO 8601 format, create transaction date"},"defaultLocations":{"required":false,"isExcluded":false},"nfRef":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"type":{"fieldType":"string","required":false,"isExcluded":false,"enum":["refNFe","refCTE","refECF","refNF","refFarmerNF"]},"refNFe":{"fieldType":"string","required":false,"isExcluded":false},"refCTe":{"fieldType":"string","required":false,"isExcluded":false},"refECF":{"required":false,"isExcluded":false,"nECF":{"fieldType":"string","required":true,"isExcluded":false,"description":"ECF Sequential number that generated Cupom attached to NFe\ninformar o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal vinculado à NF-e\n"},"nCOO":{"fieldType":"string","required":true,"isExcluded":false,"description":"Operational counter number attached to NFe\nInformar o Número do Contador de Ordem de Operação - COO vinculado à NF-e\n"},"modECF":{"fieldType":"string","required":true,"isExcluded":false,"description":"Fiscal document model\n- '2B' # coupon tax not ECF\n- '2C' # PDV coupon tax\n- '2D' # ECF coupon tax\n","enum":["2B","2C","2D"]}},"refNF":{"required":false,"isExcluded":false,"stateCd":{"fieldType":"string","required":true,"isExcluded":false,"description":"State code of fiscal Document creator","enum":["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]},"yymm":{"fieldType":"string","required":true,"isExcluded":false,"description":"year and month of fiscal document creation"},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document creator federalTaxId"},"serie":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document serie"},"number":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document number"}},"refFarmerNF":{"required":false,"isExcluded":false,"stateCd":{"fieldType":"string","required":true,"isExcluded":false,"description":"State code of fiscal Document creator, farmer","enum":["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]},"yymm":{"fieldType":"string","required":true,"isExcluded":false,"description":"year and month of fiscal document creation"},"federalTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document creator farmer federalTaxId"},"stateTaxId":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document creator, farmer stateTaxId"},"model":{"fieldType":"string","required":true,"isExcluded":false,"description":"Document Fiscal model\n- '04' # FARMER DOCUMENT\n- '01' # DETACHED DOCUMENT - AVULSO\n","enum":["04","01"]},"serie":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document serie"},"number":{"fieldType":"string","required":true,"isExcluded":false,"description":"fiscal document number"}}}}},"lines":{"fieldType":"array","required":true,"isExcluded":false,"items":{"required":false,"isExcluded":false,"lineCode":{"fieldType":"integer","required":true,"isExcluded":false,"description":"This is unique identifier for this line in the transaction"},"itemCode":{"fieldType":"string","required":true,"isExcluded":false,"description":"This string is a code maintained by the client application to uniquely identify a product or service. It will likely be a SKU and is required for SST states."},"numberOfItems":{"fieldType":"number","required":true,"isExcluded":false,"description":"This decimal 11 integers and 1 to 4 decimals captures the number of individual items or units represented by this line. Digits after the decimal point are optional. This should always be positive. Quantity, default 1","format":"double"},"lineUnitPrice":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 11 integers and 1 to 10 decimals captures the unit price of this line.","format":"double"},"lineAmount":{"fieldType":"number","required":true,"isExcluded":false,"description":"In its simplest form lineAmount = (item price * numberOfItems). If taxIncluded is 'true', lineAmount = (item price * numberOfItems + tax).","format":"double"},"lineTaxedDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"Discount conditional, This decimal 13 integers and 0 to 2 decimals","format":"double"},"lineUntaxedDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"discount unconditional, This decimal 13 integers and 0 to 2 decimals","format":"double"},"useType":{"fieldType":"string","required":true,"isExcluded":false,"description":"This is a enumeration folowing table","enum":["use or consumption","resale","agricultural production","production","use or consumption on business establishment","use or consumption on transporter service establishment","use or consumption on communication service establishment","use or consumption on demand by contract","use or consumption on energy supplier establishment","use or consumption of fuel transaction type exportation","use or consumption on services subject to iss","use or consumption on services subject to icms","fixed assets","resale export","resale icms exempt","resale buyer under the same icmsSt tax rule","transport of goods that don't need invoice (nf)"]},"processScenario":{"fieldType":"string","required":true,"isExcluded":false,"description":"Reference to process configurantion of this transaction, See ProcessScenario definition\nthis property is used only if eDocCreator=self or  eDocCreator=others and eDocCreatorPerspective=true\n"},"operationTypeReceiptMap":{"fieldType":"string","required":false,"isExcluded":false,"description":"Mapping table used to discover the CFOP when execute the Tax receipt in funciotn of CFOP Received and Item Type\nthis property is used only if eDocCreator=others and eDocCreatorPerspective=false\n"},"freightAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 13 integers and 0 to 2 decimals","format":"double"},"insuranceAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 13 integers and 0 to 2 decimals","format":"double"},"otherCostAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"This decimal 13 integers and 0 to 2 decimals","format":"double"},"entityIsIcmsSubstitute":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform that for this item the Entity referenced is ICMS Substitute"},"isTransportIcmsWithheld":{"fieldType":"boolean","required":false,"isExcluded":false,"description":"Inform that this item has ICMS withheld for transport value service."},"icmsTaxRelief":{"required":false,"isExcluded":false,"reasonCode":{"fieldType":"string","required":true,"isExcluded":false,"description":"When item transaction subject to desoneration, this is the reason code\n- '1' # Táxi;\n- '3' # Produtor Agropecuário;\n- '4' # Frotista/Locadora;\n- '5' # Diplomático/Consular;\n- '6' # Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);\n- '7' # SUFRAMA;\n- '8' # Venda a órgão Público;\n- '9' # Outros\n- '10' # Deficiente Condutor\n- '11' # Deficiente não condutor\n- '12' # Fomento agropecuário\n- '16' # Olimpíadas Rio 2016\n","enum":["1","3","4","5","6","7","8","9","10","11","12","16"]},"taxBaseDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"ICMS Tax base rate discount  (desconto na base do ICMS referetne a desoneração)","format":"double"},"taxAmount":{"fieldType":"number","required":false,"isExcluded":false,"description":"Amount for Icms Relief (desoneração)","format":"double"}}}},"calculatedTaxSummary":{"required":true,"isExcluded":false,"numberOfLines":{"fieldType":"integer","required":false,"isExcluded":false,"description":"Count of lines"},"taxedDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all line taxed discounts","format":"double"},"untaxedDiscount":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all line untaxed discounts","format":"double"},"subtotal":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all line lineAmount attribute","format":"double"},"totalTax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all line tax attribute","format":"double"},"grandTotal":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all line lineAmount attribute + sum of all line tax attribute not VAT - sum of all line lineTaxedDiscount attribute","format":"double"},"taxByType":{"required":false,"isExcluded":false,"icms":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsSt":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsStSd":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsPartOwn":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsPartDest":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsDifaFCP":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsDifaDest":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsDifaRemet":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsRf":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsDeson":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"icmsCredsn":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"pis":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"pisSt":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"cofins":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"cofinsSt":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"ipi":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"ipiReturned":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"ii":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"iof":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"aproxtribState":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}},"aproxtribFed":{"required":false,"isExcluded":false,"calcBase":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of all lines calcBase","format":"double"},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value","format":"double"},"jurisdictions":{"fieldType":"array","required":false,"isExcluded":false,"items":{"required":false,"isExcluded":false,"jurisdictionName":{"fieldType":"string","required":false,"isExcluded":false,"description":"Jurisdiction used for calctax amount"},"jurisdictionType":{"fieldType":"string","required":false,"isExcluded":false,"description":"Type of jurisdiction\n- 'City'\n- 'State'\n- 'Country'\n","enum":["City","State","Country"]},"tax":{"fieldType":"number","required":false,"isExcluded":false,"description":"sum of referenced tax value by jurisdiction","format":"double"}}}}}},"processingInfo":{"required":true,"isExcluded":false,"versionId":{"fieldType":"string","required":false,"isExcluded":false},"duration":{"fieldType":"number","required":false,"isExcluded":false,"format":"double"}}},"responseSchemaWithRefs":{"description":"Transaction Out","schema":{"$ref":"#/definitions/TransactionForGoodsOut"}},"produces":["application/json"],"id":0}],"postmanCollection":{"info":{"name":"AvaTax Brazil","_postman_id":"1234","description":"The Avatax-Brazil API exposes the most commonly services available for interacting with the AvaTax-Brazil services, allowing calculation of taxes, issuing electronic invoice documents and modifying existing transactions when allowed by tax authorities.  This API is exclusively for use by business with a physical presence in Brazil.","schema":"https://schema.getpostman.com/json/collection/v2.0.0/collection.json"},"item":[{"name":"Simulate Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations?goods","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"This operation uses minimum set of attributes for calculate the taxes. This operation do not store the messages.","body":{"mode":"raw","raw":"{\"header\":{\"participants\":{\"entity\":{},\"transporter\":{}},\"defaultLocations\":{},\"nfRef\":[{\"refECF\":{},\"refNF\":{},\"refFarmerNF\":{}}]},\"lines\":[{\"icmsTaxRelief\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store?goods","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"This method has more the one operation model,\n(a) simple calculation, this mode has a minimal validation and mandatory field, only enough for calc;\n(b) full calculation, simulation, this mode the system will check all atributes and calc all taxes for that transaction;\n(c) full calculation, starting process to transform this this request into transaction (for NFe, NFCe, CT-e need government authorization);\n(d) ASIS, the sistem receive the message, store and try get authorization, model valid only form NFe, NFCe and CT-e.\n","body":{"mode":"raw","raw":"{\"header\":{\"participants\":{\"entity\":{},\"transporter\":{}},\"defaultLocations\":{},\"nfRef\":[{\"refECF\":{},\"refNF\":{},\"refFarmerNF\":{}}]},\"lines\":[{\"icmsTaxRelief\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store/transaction?goods","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"This method has more the one operation model,\n(a) simple calculation, this mode has a minimal validation and mandatory field, only enough for calc;\n(b) full calculation, simulation, this mode the system will check all atributes and calc all taxes for that transaction;\n(c) full calculation, starting process to transform this this request into transaction (for NFe, NFCe, CT-e need government authorization);\n(d) ASIS, the sistem receive the message, store and try get authorization, model valid only form NFe, NFCe and CT-e.\n","body":{"mode":"raw","raw":"{\"header\":{\"participants\":{\"entity\":{},\"transporter\":{}},\"defaultLocations\":{},\"nfRef\":[{\"refECF\":{},\"refNF\":{},\"refFarmerNF\":{}}]},\"lines\":[{\"icmsTaxRelief\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations?service-sales","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned. Accept all transactions type (Sale, Purchase, Payment and Receipt), the format and message type are desbribed above in each 'calculations-<type>'.","body":{"mode":"raw","raw":"{\"header\":{\"entity\":{\"build\":{}},\"payment\":{\"installments\":[{}]},\"taxesConfig\":{},\"defaultLocations\":{\"serviceRendered\":{}}},\"lines\":[{\"taxDeductions\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations?service-purchase","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{\"entity\":{},\"payment\":{\"installments\":[{}]},\"taxesConfig\":{},\"defaultLocations\":{\"PointOfOrderOrigin\":{}}},\"lines\":[{\"taxForItem\":{},\"taxDeductions\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations?service-payment","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{},\"lines\":[{}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations?service-receipt","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{},\"lines\":[{}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store?service-sales","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned. Accept all transactions type (Sale, Purchase, Payment and Receipt), the format and message type are desbribed above in each 'calculations-<type>'.","body":{"mode":"raw","raw":"{\"header\":{\"entity\":{\"build\":{}},\"payment\":{\"installments\":[{}]},\"taxesConfig\":{},\"defaultLocations\":{\"serviceRendered\":{}}},\"lines\":[{\"taxDeductions\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store?service-purchase","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{\"entity\":{},\"payment\":{\"installments\":[{}]},\"taxesConfig\":{},\"defaultLocations\":{\"PointOfOrderOrigin\":{}}},\"lines\":[{\"taxForItem\":{},\"taxDeductions\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store?service-payment","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{},\"lines\":[{}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store?service-receipt","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{},\"lines\":[{}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store/transaction?service-sales","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned. Accept all transactions type (Sale, Purchase, Payment and Receipt), the format and message type are desbribed above in each 'calculations-<type>'.","body":{"mode":"raw","raw":"{\"header\":{\"entity\":{\"build\":{}},\"payment\":{\"installments\":[{}]},\"taxesConfig\":{},\"defaultLocations\":{\"serviceRendered\":{}}},\"lines\":[{\"taxDeductions\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store/transaction?service-purchase","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{\"entity\":{},\"payment\":{\"installments\":[{}]},\"taxesConfig\":{},\"defaultLocations\":{\"PointOfOrderOrigin\":{}}},\"lines\":[{\"taxForItem\":{},\"taxDeductions\":{}}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store/transaction?service-payment","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{},\"lines\":[{}]}"}},"response":[]},{"name":"Calculation Method","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/store/transaction?service-receipt","method":"post","header":[{"key":"Content-Type","value":"application/json"}],"description":"Refer to the business rules below, for an outline view of Tax Determination Process as a whole, showing a beginning-to-end process making use of the specific UseCases and discriminating all required attributes and data to be returned.","body":{"mode":"raw","raw":"{\"header\":{},\"lines\":[{}]}"}},"response":[]},{"name":"Retrieve goods transactions","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/goods","method":"get","header":[],"description":"Retrieve a list of transactions","body":{"mode":"formdata","formdata":[]}},"response":[]},{"name":"Retrieve goods transactions","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/goods/{documentCode}","method":"get","header":[],"description":"Retrieve a single transaction","body":{"mode":"formdata","formdata":[]}},"response":[]},{"name":"Remove goods transactions","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/goods/{documentCode}","method":"delete","header":[],"description":"Remove a single transaction","body":{"mode":"formdata","formdata":[]}},"response":[]},{"name":"Promote a calculation to transaction","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/goods/{documentCode}/transactions","method":"put","header":[],"description":"Promote a calculation to transaction","body":{"mode":"formdata","formdata":[]}},"response":[]},{"name":"Retrieve service transactions","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/service","method":"get","header":[],"description":"Retrieve a list of transactions","body":{"mode":"formdata","formdata":[]}},"response":[]},{"name":"Retrieve service transactions","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/service/{documentCode}","method":"get","header":[],"description":"Retrieve a single transaction","body":{"mode":"formdata","formdata":[]}},"response":[]},{"name":"Remove service transactions","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/service/{documentCode}","method":"delete","header":[],"description":"Remove a single transaction","body":{"mode":"formdata","formdata":[]}},"response":[]},{"name":"Promote a calculation to transaction","request":{"url":"http://avataxbr-sandbox.avalarabrasil.com.br/v2/calculations/service/{documentCode}/transactions","method":"put","header":[],"description":"Promote a calculation to transaction","body":{"mode":"formdata","formdata":[]}},"response":[]}]},"tagName":null};
+</script>
+<script src='/public/js/api-bundle.js'></script>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'developeravalaracom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</main>
+        </section>
+          
+    </div>
+    <footer>
+        <ul class="global">
+            <li><a href="https://www.avalara.com/"><span class="icon-sphere"></span>Avalara.com</a></li>
+            <li><a href="https://help.avalara.com/"><span class="icon-help"></span>Help Center</a></li>
+        </ul>
+
+
+        <ul class="social">
+            <li class="twitter"><a href="https://twitter.com/Avalara">Twitter</a></li>
+            <li class="facebook"><a href="https://www.facebook.com/avalara">Facebook</a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/company/avalara">LinkedIn</a></li>
+            <li class="youtube"><a href="https://www.youtube.com/user/Avalara1">Youtube</a></li>
+        </ul>
+        
+        
+
+
+        <ul class="legal">
+            <li>&copy; 2017 Avalara, Inc. All rights reserved</li>
+            <li><a href="https://www.avalara.com/site-terms/">Terms of use</a></li>
+            <li><a href="https://www.avalara.com/privacy-policy/">Privacy policy</a></li>
+        </ul>
+
+        <ul class="github">
+            <li class="social github-icon"><a href="https://github.com/Avalara/developer-dot/edit/master/dynamic/swagger/avataxbr/calculation.json"><span>GH</span> Edit this page on GitHub</a></li>
+
+        </ul>
+    </footer>
+
+    <script src="/developer-dot/public/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="/developer-dot/public/js/vendor/bootstrap.min.js"></script>
+    <script src="/developer-dot/public/js/site.js"></script>
+
+    
+    <script src="/developer-dot/public/js/vendor/aws-sdk-2.5.3.min.js"></script>
+    <script>
+        AWS.config.region = 'us-west-2';
+    </script>
+
+     
+
+    <!-- Adobe Dynamic Tag Manager -->
+    <script type="text/javascript">
+        _satellite.pageBottom();
+    </script>
+    <!-- End Adobe Dynamic Tag Manager -->
+</body>
+
+</html>

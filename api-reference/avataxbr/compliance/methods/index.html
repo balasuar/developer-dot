@@ -1,0 +1,2696 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="robots" content="index,follow" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance | Avalara Developer</title>
+
+    
+    <meta name="description" content="API solutions for end-to-end tax compliance">
+
+    
+    <meta property="og:title" content="Compliance | Avalara Developer" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://developer.avalara.com/" />
+    <meta property="og:site_name" content="Avalara Developer Network" />
+    <meta property="og:description" content="API solutions for end-to-end tax compliance"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/developer-dot/public/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/developer-dot/public/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/developer-dot/public/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/developer-dot/public/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/developer-dot/public/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/developer-dot/public/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/developer-dot/public/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/developer-dot/public/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/developer-dot/public/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/developer-dot/public/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/developer-dot/public/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/developer-dot/public/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/developer-dot/public/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/developer-dot/public/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff ">
+    <meta name="msapplication-TileImage" content="/developer-dot/public/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff ">
+
+    <link rel="stylesheet" href="/developer-dot/public/css/style.css"> 
+    <!-- Adobe Dynamic Tab Manager Tag Manager -->
+    <script src="https://assets.adobedtm.com/bc10a2a9cf337c664f8f74e778a1987125aea184/satelliteLib-0387aefee1ddb8b2a9db7e4165c8d84dc0de8621.js"></script>
+    <!-- End Adobe Dynamic Tab Manager Tag Manager -->
+</head>
+ 
+
+<body id="top" data-product=avaTaxBr>
+    <header>
+        <div class="pageTitle">
+            <a href="/developer-dot/">
+                <img src="/developer-dot/public/images/Avalara_logo.svg" alt="Avalara Developer Network">
+                <span>Developer</span>
+            </a>
+            <span class="slash">/&nbsp;</span><a href="/developer-dot/avataxbr">avaTaxBr</a>
+        </div>
+        <nav class="navbar navbar-default navbar-static">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                <span>Menu</span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse js-navbar-collapse">
+                <ul class="nav navbar-nav apis ">
+                    <li class="apis visible-xs-block"><a href="/developer-dot/avalara-apis"><span class="text-uppercase">API</span>s</a></li>
+                    <li class="visible-xs-block"><a href="/developer-dot/avatax/dev-guide/"><span class="text-uppercase">AvaTax Developer Guide</span></a></li>
+                    <li class="apis dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">API</span>s <i class="caret"></i></a>
+                        <div class="dropdown-menu dropdown-menu-large">
+                            <div class="row">
+                                <div class="col-md-12"><a href="/developer-dot/avalara-apis">APIs overview</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2>Tax calculation</h2>
+                                    
+                                    <h4>Avalara AvaTax</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/avatax">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/avatax/use-cases">Use cases</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/avatax/rest/v2">API reference</a></li>
+                                        
+                                        <br/>
+                                        <li><a href="/developer-dot/avatax/dev-guide/">Developer Guide</a></li>
+                                        <li><a href="/developer-dot/avatax/get-started">Set up your AvaTax sandbox</a></li>
+                                    </ul>
+                                     
+                                    <h4>Avalara Communications</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/communications">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/communications/afc-rest">API reference</a></li>
+                                        
+                                    </ul>
+                                     
+                                    <h4>Avalara Excise</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/excise">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/excise/5_18_0">API reference</a></li>
+                                        
+                                    </ul>
+                                     
+                                    <h4>Avalara LandedCost</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/landedcost">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/landedcost">API reference</a></li>
+                                        
+                                    </ul>
+                                     
+                                    <h4>Avalara AvaTax Brazil</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/avataxbr">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/avataxbr/index/models">API Reference</a></li>
+                                        
+                                        <li><a href="/developer-dot/avataxbr/clients">Clients</a></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                                <div class="col-sm-6">
+                                    <h2>Compliance document management</h2>
+                                    
+                                    <h4>Avalara CertCapture</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/certcapture">Overview</a></li>
+                                        
+                                        <li><a href="http://docs.certcapture6xrest.apiary.io/">API reference</a></li>
+                                        
+                                    </ul>
+                                    
+                                    <h2>Returns &amp; filing</h2>
+                                     
+                                    <h4>Avalara TrustFile</h4>
+                                    <ul class="pipe">
+                                        
+                                        <li><a href="/developer-dot/trustfile">Overview</a></li>
+                                        
+                                        <li><a href="/developer-dot/api-reference/trustfile/api">API reference</a></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sdk dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">SDK</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li ><a href="/developer-dot/avatax/get-started">Get Started with AvaTax</a></li>
+                            <br/>
+                            <li><a href="/developer-dot/sdk/">The AvaTax SDK</a></li>
+                            <li><a href="/developer-dot/sdk/soap">SOAP SDK</a></li>
+                            <br/>
+                            <li><a target="_blank" href="https://www.nuget.org/packages/Avalara.AvaTax/">Install C# SDK via NuGet</a></li>
+                            <li><a target="_blank" href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22net.avalara.avatax%22">Install JRE SDK via Maven</a></li>
+                            <li><a target="_blank" href="https://packagist.org/packages/avalara/avataxclient">Install PHP SDK via Composer</a></li>
+                            <li><a target="_blank" href="https://rubygems.org/gems/avatax">Install Ruby SDK via RubyGems</a></li>
+                            <li><a target="_blank" href="https://www.npmjs.com/package/avatax">Install JavaScript SDK via NPMJS</a></li>
+                        </ul>
+                    </li>
+                    <li class="tests"><a href="/developer-dot/tests/testing-your-integration/"><span class="text-uppercase">Tests</span></a></li>
+                    <!-- removing until the link to the Self-Test is fugured out -->
+                    <!--
+                    <li class="tests dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">Tests</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li><a href="/developer-dot/tests/self-test">Avalara Self-Test Tool</a></li>
+                            <li><a href="/developer-dot/tests/testing-your-integration/">Avalara Test Cases</a></li>
+                        </ul>
+                    </li> -->
+
+                    <li class="certification dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggel" data-toggle="dropdown"><span class="text-uppercase">Become Certified</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li><a href="/developer-dot/certification/">Overview</a></li>
+                            <li><a href="/developer-dot/certification/avatax/">Avalara AvaTax</a></li>
+                            <li><a href="/developer-dot/certification/communications-certification/">Avalara Communications</a></li>
+                            <li><a href="/developer-dot/certification/excise/">Avalara Excise</a></li>
+                            <li><a href="/developer-dot/certification/certcapture/">Avalara CertCapture</a></li>
+                        </ul>
+                    </li>
+                    <li class="resources dropdown dropdown-large hidden-xs">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="text-uppercase">Resources</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large">
+                            <li><a href="/developer-dot/blog">Developer Blog</a></li>
+                            <!--<li><a href="/developer-dot/resources/preferred-developers">Preferred developers</a></li>-->
+                            <li><a href="https://community.avalara.com/avalara/category_sets/developers">Help Forum</a></li>
+                            <li><a href="http://www.info.avalara.com/avalaradevcentral">Developer Webinar Series</a></li>
+                            <li><a href="https://avalaracommunity.force.com/partnerlaunch" target="_blank">Avalara Launch Center</a></li>
+                        </ul>
+                    </li>
+                    <li class="resources visible-xs-block"><a href="/developer-dot/blog"><span class="text-uppercase">Developer Blog</span></a></li>
+                    <li class="resources visible-xs-block"><a href="/developer-dot/resources/preferred-developers"><span class="text-uppercase">Preferred developers</span></a></li>
+                    <li class="resources visible-xs-block"><a href="https://community.avalara.com/avalara/category_sets/developers"><span class="text-uppercase">Help Forum</span></a></li>
+                    <li class="resources visible-xs-block"><a href="/developer-dot/search"><span class="text-uppercase">Search</span></a></li>
+                    <li class="hdr-search-icon hidden-xs">
+                        <i class="mouse glyphicon glyphicon-search mouse"></i>
+                    </li>
+                    <form class="hdr-search-form horizontal hidden-xs hidden">
+                        <div class="row">
+                            
+                            <div class="col-md-9"><label><input type="checkbox" id="filterSite"> Search entire site</label></div>
+                            <div class="col-md-3">
+                                <button type="button" class="close" aria-label="Close"><span>&times;</span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-9">
+                                <input class="form-control" type="search" placeholder="Search Developer / Avataxbr" >
+                                <span class="form-control-feedback">!</span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <input type="submit" class="btn btn-primary" value="Search">
+                            </div>
+                        </div>
+                    </form>
+                </ul>
+
+                
+                <a href="https://developer.avalara.com/avatax/signup/" class="btn btn-primary btn-signup">Sign up</a>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid api_references">
+        
+          
+
+
+<div class="breadcrumbs">
+    <div class="col-md-12">
+        <ul class="pipe">
+            <li><span class="text-uppercase">Tax Calculation API</span>s</li>
+            <li class="text-uppercase"><a href="/developer-dot/avataxbr">Avalara avaTaxBr</a></li>
+            <li class="text-uppercase">api reference</li>
+        </ul>
+    </div>
+</div>
+  
+        <section class="row padding-sides">
+            <nav class="col-md-3 api-ref">
+                 <div id='the-nav' class='nav-wrapper hidden-xs hidden-sm api-ref-nav' style='height: 100%; overflow-y: auto;'>
+    <ul class='api-ref-side-nav nav nav-pills nav-stacked'>
+        
+        
+
+        
+        
+
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/transaction">Transaction</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/auth">Auth</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/calculation">Calculation</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/compliance">Compliance</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                        
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/configuration">Configuration</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/documents">Documents</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/common">Common</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+            
+            
+
+            
+            
+            
+                <li>
+                    <a href="/developer-dot/api-reference/avataxbr/invoice">Invoices</a>
+                    <!-- not quite sure how to do boolean algebra in liquid syntax -->
+                    
+                </li>
+            
+        
+
+        
+    </ul>
+</div>
+ 
+            </nav>
+            <main class="col-md-9 small-no-padding"><h1>Compliance - Methods</h1>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>Purpose</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteApuracaoAjuste">DeleteApuracaoAjuste</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ApuracaoAjuste’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteApuracaoAjusteDocumentacao">DeleteApuracaoAjusteDocumentacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ApuracaoAjusteDocumentacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteApuracaoAjusteProcesso">DeleteApuracaoAjusteProcesso</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ApuracaoAjusteProcesso’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteApuracaoContribuicaoPrevidenciaria">DeleteApuracaoContribuicaoPrevidenciaria</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ApuracaoContribuicaoPrevidenciaria’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteApuracaoImposto">DeleteApuracaoImposto</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ApuracaoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteApuracaoImpostoIPI">DeleteApuracaoImpostoIPI</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ApuracaoImpostoIPI’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteApuracaoInformacaoAdicional">DeleteApuracaoInformacaoAdicional</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ApuracaoInformacaoAdicional’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteArrecadacaoReferenciado">DeleteArrecadacaoReferenciado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ArrecadacaoReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteAtividadeIncentivadaPJ">DeleteAtividadeIncentivadaPJ</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘AtividadeIncentivadaPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteAtivoImobilizadoPISCOFINS">DeleteAtivoImobilizadoPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘AtivoImobilizadoPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteAtivoImobilizadoPISCOFINSProcessoReferenciado">DeleteAtivoImobilizadoPISCOFINSProcessoReferenciado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘AtivoImobilizadoPISCOFINSProcessoReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteAtivosExterior">DeleteAtivosExterior</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘AtivosExterior’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteBaseCalculoIncentivosFiscais">DeleteBaseCalculoIncentivosFiscais</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘BaseCalculoIncentivosFiscais’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteBemCIAP">DeleteBemCIAP</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘BemCIAP’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteBens">DeleteBens</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Bens’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCalculoIsencaoReducaoImpostoSobreLucroRealIRPJ">DeleteCalculoIsencaoReducaoImpostoSobreLucroRealIRPJ</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CalculoIsencaoReducaoImpostoSobreLucroRealIRPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCalculoIsencaoReducaoLucroPresumido">DeleteCalculoIsencaoReducaoLucroPresumido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CalculoIsencaoReducaoLucroPresumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCampoAdicional">DeleteCampoAdicional</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CampoAdicional’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCentroCusto">DeleteCentroCusto</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CentroCusto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCIAPOutrosCreditos">DeleteCIAPOutrosCreditos</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CIAPOutrosCreditos’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCodigoAglutinacao">DeleteCodigoAglutinacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CodigoAglutinacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCodigoAglutinacaoCentroCusto">DeleteCodigoAglutinacaoCentroCusto</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CodigoAglutinacaoCentroCusto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteComercioEletronico">DeleteComercioEletronico</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ComercioEletronico’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCompOperPer">DeleteCompOperPer</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CompOperPer’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteConsOperPer">DeleteConsOperPer</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ConsOperPer’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteConsOperPerProcRef">DeleteConsOperPerProcRef</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ConsOperPerProcRef’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContabilFolhaPagamento">DeleteContabilFolhaPagamento</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContabilFolhaPagamento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContabilista">DeleteContabilista</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Contabilista’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContaContabilReferencial">DeleteContaContabilReferencial</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContaContabilReferencial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContaContabilSubConta">DeleteContaContabilSubConta</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContaContabilSubConta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContribuicaoDiferidaAnteriorPISCOFINS">DeleteContribuicaoDiferidaAnteriorPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContribuicaoDiferidaAnteriorPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContribuicaoExtemporaneaPISCOFINS">DeleteContribuicaoExtemporaneaPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContribuicaoExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContribuicaoPrevidenciariaConsolidada">DeleteContribuicaoPrevidenciariaConsolidada</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContribuicaoPrevidenciariaConsolidada’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContribuicaoRetidaFontePISCOFINS">DeleteContribuicaoRetidaFontePISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContribuicaoRetidaFontePISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteContribuicaoSocialExtemporaneaPISCOFINS">DeleteContribuicaoSocialExtemporaneaPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ContribuicaoSocialExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteControleEstoque">DeleteControleEstoque</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ControleEstoque’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCorrecaoApontamentoEstoque">DeleteCorrecaoApontamentoEstoque</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CorrecaoApontamentoEstoque’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCorrecaoApontamentoRegistroFilho">DeleteCorrecaoApontamentoRegistroFilho</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CorrecaoApontamentoRegistroFilho’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCorrecaoApontamentoRegistroPai">DeleteCorrecaoApontamentoRegistroPai</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CorrecaoApontamentoRegistroPai’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCreditoDescontoContribuicaoSocialExtemporaneaPISCOFINS">DeleteCreditoDescontoContribuicaoSocialExtemporaneaPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CreditoDescontoContribuicaoSocialExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCreditoExtemporaneoPISCOFINS">DeleteCreditoExtemporaneoPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CreditoExtemporaneoPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCreditoFiscalPISCOFINS">DeleteCreditoFiscalPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CreditoFiscalPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteCupomFiscalReferenciado">DeleteCupomFiscalReferenciado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘CupomFiscalReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDaconCategoria">DeleteDaconCategoria</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DaconCategoria’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDaconCategoriaProdutoAliquotas">DeleteDaconCategoriaProdutoAliquotas</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DaconCategoriaProdutoAliquotas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDaconContasContabeis">DeleteDaconContasContabeis</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DaconContasContabeis’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDadosSucessoras">DeleteDadosSucessoras</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DadosSucessoras’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDebitoImposto">DeleteDebitoImposto</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DebitoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDeclaracaoPaisPais">DeleteDeclaracaoPaisPais</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DeclaracaoPaisPais’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDeclaracaoPaisPaisDeclaracao">DeleteDeclaracaoPaisPaisDeclaracao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DeclaracaoPaisPaisDeclaracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDeclaracaoPaisPaisEntidade">DeleteDeclaracaoPaisPaisEntidade</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DeclaracaoPaisPaisEntidade’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDeclaracaoPaisPaisObservacao">DeleteDeclaracaoPaisPaisObservacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DeclaracaoPaisPaisObservacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDeducaoDARF">DeleteDeducaoDARF</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DeducaoDARF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDeducaoDiversasPISCOFINS">DeleteDeducaoDiversasPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DeducaoDiversasPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDemonstracaoLucroExploracaoIRPJ">DeleteDemonstracaoLucroExploracaoIRPJ</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DemonstracaoLucroExploracaoIRPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDemonstracaoReceitasIncentivadas">DeleteDemonstracaoReceitasIncentivadas</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DemonstracaoReceitasIncentivadas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDemonstrativoLivroCaixa">DeleteDemonstrativoLivroCaixa</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DemonstrativoLivroCaixa’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDesmontagemItemDestino">DeleteDesmontagemItemDestino</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DesmontagemItemDestino’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDesmontagemItemOrigem">DeleteDesmontagemItemOrigem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DesmontagemItemOrigem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDetalhamentoContribuicaoSocialExtemporaneaPISCOFINS">DeleteDetalhamentoContribuicaoSocialExtemporaneaPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DetalhamentoContribuicaoSocialExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDetalheApuracaoContribuicaoPrevidenciario">DeleteDetalheApuracaoContribuicaoPrevidenciario</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DetalheApuracaoContribuicaoPrevidenciario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDetalheExportacaoComercialExportadora">DeleteDetalheExportacaoComercialExportadora</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DetalheExportacaoComercialExportadora’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDoacoesEleitorais">DeleteDoacoesEleitorais</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DoacoesEleitorais’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocFiscalEmitidoECF">DeleteDocFiscalEmitidoECF</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocFiscalEmitidoECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocFiscalEmitidoECFItem">DeleteDocFiscalEmitidoECFItem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocFiscalEmitidoECFItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscal">DeleteDocumentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalFatura">DeleteDocumentoFiscalFatura</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalFatura’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalImpostoRetido">DeleteDocumentoFiscalImpostoRetido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalImpostoRetido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalInfoComplementar">DeleteDocumentoFiscalInfoComplementar</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalInfoComplementar’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalItem">DeleteDocumentoFiscalItem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalItemRessarcimentoICMS">DeleteDocumentoFiscalItemRessarcimentoICMS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalItemRessarcimentoICMS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalOperacaoArmas">DeleteDocumentoFiscalOperacaoArmas</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalOperacaoArmas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalOperacaoMedicamentoItem">DeleteDocumentoFiscalOperacaoMedicamentoItem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalOperacaoMedicamentoItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalOperacaoVeiculoNovo">DeleteDocumentoFiscalOperacaoVeiculoNovo</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalOperacaoVeiculoNovo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalParcela">DeleteDocumentoFiscalParcela</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalParcela’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteDocumentoFiscalReferenciado">DeleteDocumentoFiscalReferenciado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘DocumentoFiscalReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEntidadeReferencial">DeleteEntidadeReferencial</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EntidadeReferencial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEquipamentoECF">DeleteEquipamentoECF</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EquipamentoECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEstabelecimentoAberturaPISCOFINS">DeleteEstabelecimentoAberturaPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EstabelecimentoAberturaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEstabelecimentoFiscal">DeleteEstabelecimentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EstabelecimentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEstabelecimentoFiscalDACON">DeleteEstabelecimentoFiscalDACON</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EstabelecimentoFiscalDACON’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEstabelecimentoFiscalDIPJ">DeleteEstabelecimentoFiscalDIPJ</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EstabelecimentoFiscalDIPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEstabelecimentoFiscalECF">DeleteEstabelecimentoFiscalECF</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EstabelecimentoFiscalECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteEventoIncorporacaoFusaoCisaoPISCOFINS">DeleteEventoIncorporacaoFusaoCisaoPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘EventoIncorporacaoFusaoCisaoPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteExportacaoDocumentoFiscal">DeleteExportacaoDocumentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ExportacaoDocumentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteExportacaoIndireta">DeleteExportacaoIndireta</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ExportacaoIndireta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteFCIItem">DeleteFCIItem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘FCIItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteFolhaPagamento">DeleteFolhaPagamento</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘FolhaPagamento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteFolhaSalariosPIS">DeleteFolhaSalariosPIS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘FolhaSalariosPIS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteFormularioCancelado">DeleteFormularioCancelado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘FormularioCancelado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteFormularioUtilizado">DeleteFormularioUtilizado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘FormularioUtilizado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteFornecedoresClientes">DeleteFornecedoresClientes</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘FornecedoresClientes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteFundoClubeInvestimento">DeleteFundoClubeInvestimento</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘FundoClubeInvestimento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteGNRE">DeleteGNRE</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘GNRE’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteGuiaPrevidenciaSocial">DeleteGuiaPrevidenciaSocial</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘GuiaPrevidenciaSocial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteHistoricoPadrao">DeleteHistoricoPadrao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘HistoricoPadrao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExt">DeleteIdentPartExt</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExt’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExtConsolidacao">DeleteIdentPartExtConsolidacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExtConsolidacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExtEstruturaSocietaria">DeleteIdentPartExtEstruturaSocietaria</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExtEstruturaSocietaria’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExtImpostoPagoExterior">DeleteIdentPartExtImpostoPagoExterior</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExtImpostoPagoExterior’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExtPeriodoApuracao">DeleteIdentPartExtPeriodoApuracao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExtPeriodoApuracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExtPrejuizoAcumulado">DeleteIdentPartExtPrejuizoAcumulado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExtPrejuizoAcumulado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExtRegimeCaixa">DeleteIdentPartExtRegimeCaixa</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExtRegimeCaixa’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIdentPartExtRendaAtivaPassiva">DeleteIdentPartExtRendaAtivaPassiva</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IdentPartExtRendaAtivaPassiva’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIndustrializacaoInsumoConsumido">DeleteIndustrializacaoInsumoConsumido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IndustrializacaoInsumoConsumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteIndustrializacaoItemProduzido">DeleteIndustrializacaoItemProduzido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘IndustrializacaoItemProduzido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInfoPeriodosAnteriores">DeleteInfoPeriodosAnteriores</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InfoPeriodosAnteriores’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInfOptPAESImunesIsentas">DeleteInfOptPAESImunesIsentas</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InfOptPAESImunesIsentas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInfOptREFISImunesIsentas">DeleteInfOptREFISImunesIsentas</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InfOptREFISImunesIsentas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInformacaoAdicionalDiferidaPISCOFINS">DeleteInformacaoAdicionalDiferidaPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InformacaoAdicionalDiferidaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInformacaoComplementar">DeleteInformacaoComplementar</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InformacaoComplementar’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInformacaoExportacao">DeleteInformacaoExportacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InformacaoExportacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInscricaoEstadualEstabelecimentoFiscal">DeleteInscricaoEstadualEstabelecimentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InscricaoEstadualEstabelecimentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInsumoConsumido">DeleteInsumoConsumido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InsumoConsumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInsumoRelacionado">DeleteInsumoRelacionado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InsumoRelacionado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInventario">DeleteInventario</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Inventario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteInventarioInformacaoComplementar">DeleteInventarioInformacaoComplementar</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘InventarioInformacaoComplementar’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteItem">DeleteItem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Item’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteItemAlteracao">DeleteItemAlteracao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ItemAlteracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteItemConsumo">DeleteItemConsumo</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ItemConsumo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteItemEstabelecimentoFiscal">DeleteItemEstabelecimentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ItemEstabelecimentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteItemProduzido">DeleteItemProduzido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ItemProduzido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteLancamentoContabil">DeleteLancamentoContabil</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘LancamentoContabil’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteLivroRazaoParametrizavelCampo">DeleteLivroRazaoParametrizavelCampo</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘LivroRazaoParametrizavelCampo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteLivroRazaoParametroValor">DeleteLivroRazaoParametroValor</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘LivroRazaoParametroValor’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteLocalColetaEntrega">DeleteLocalColetaEntrega</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘LocalColetaEntrega’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteLotacao">DeleteLotacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Lotacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteMovimentacao">DeleteMovimentacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Movimentacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteMovimentacaoDocumentoFiscal">DeleteMovimentacaoDocumentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘MovimentacaoDocumentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteMovimentacaoDocumentoFiscalItem">DeleteMovimentacaoDocumentoFiscalItem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘MovimentacaoDocumentoFiscalItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteMovimentacaoLALUR">DeleteMovimentacaoLALUR</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘MovimentacaoLALUR’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteMovimentoInventario">DeleteMovimentoInventario</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘MovimentoInventario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteNaturezaOperacao">DeleteNaturezaOperacao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘NaturezaOperacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteObrigacaoRecolher">DeleteObrigacaoRecolher</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ObrigacaoRecolher’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteObservacaoDocumentoLancamentoDetalhe">DeleteObservacaoDocumentoLancamentoDetalhe</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ObservacaoDocumentoLancamentoDetalhe’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteObservacaoDocumentoLancamentoFiscal">DeleteObservacaoDocumentoLancamentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ObservacaoDocumentoLancamentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteObservacaoLancamentoFiscal">DeleteObservacaoLancamentoFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ObservacaoLancamentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOperExteriorImportExport">DeleteOperExteriorImportExport</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OperExteriorImportExport’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOperExteriorImportExportContratantes">DeleteOperExteriorImportExportContratantes</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OperExteriorImportExportContratantes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOperExteriorPVNV">DeleteOperExteriorPVNV</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OperExteriorPVNV’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOptantesREFIS">DeleteOptantesREFIS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OptantesREFIS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOptantesREFISOptantes">DeleteOptantesREFISOptantes</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OptantesREFISOptantes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOutrasCompensacoes">DeleteOutrasCompensacoes</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OutrasCompensacoes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOutrasInformacoesECF">DeleteOutrasInformacoesECF</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OutrasInformacoesECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOutrasInformacoesLucroPresumido">DeleteOutrasInformacoesLucroPresumido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OutrasInformacoesLucroPresumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOutrasInformacoesLucroReal">DeleteOutrasInformacoesLucroReal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OutrasInformacoesLucroReal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOutrasMovimentacoes">DeleteOutrasMovimentacoes</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OutrasMovimentacoes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOutrosDocumentosPISCOFINS">DeleteOutrosDocumentosPISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OutrosDocumentosPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteOutrosLancamentosInfoEconomicas">DeleteOutrosLancamentosInfoEconomicas</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘OutrosLancamentosInfoEconomicas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeletePagamentoDARF">DeletePagamentoDARF</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘PagamentoDARF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeletePagamentoIndevido">DeletePagamentoIndevido</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘PagamentoIndevido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeletePagamentoRecebimentoExterior">DeletePagamentoRecebimentoExterior</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘PagamentoRecebimentoExterior’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeletePagamentoRemessasServJurosDivRecBRExt">DeletePagamentoRemessasServJurosDivRecBRExt</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘PagamentoRemessasServJurosDivRecBRExt’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteParceiro">DeleteParceiro</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Parceiro’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteParceiroAlteracao">DeleteParceiroAlteracao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ParceiroAlteracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteParcelamentoImposto">DeleteParcelamentoImposto</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ParcelamentoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteParticipacoesConsorciosEmpresas">DeleteParticipacoesConsorciosEmpresas</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ParticipacoesConsorciosEmpresas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteParticipacoesConsorciosEmpresasParticipantes">DeleteParticipacoesConsorciosEmpresasParticipantes</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ParticipacoesConsorciosEmpresasParticipantes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteParticipanteAcionario">DeleteParticipanteAcionario</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ParticipanteAcionario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteParticipAvalMetodoEquivPatrimonial">DeleteParticipAvalMetodoEquivPatrimonial</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ParticipAvalMetodoEquivPatrimonial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeletePedidoExterno">DeletePedidoExterno</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘PedidoExterno’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeletePedidoExternoItem">DeletePedidoExternoItem</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘PedidoExternoItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeletePlanoConta">DeletePlanoConta</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘PlanoConta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteProcessoReferenciado">DeleteProcessoReferenciado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ProcessoReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteProcessoReferenciadoAcaoJudicial">DeleteProcessoReferenciadoAcaoJudicial</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ProcessoReferenciadoAcaoJudicial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteProcessoReferenciadoContribuicaoPrevidenciario">DeleteProcessoReferenciadoContribuicaoPrevidenciario</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ProcessoReferenciadoContribuicaoPrevidenciario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteProcessoReferenciadoProcessoAdministrativo">DeleteProcessoReferenciadoProcessoAdministrativo</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ProcessoReferenciadoProcessoAdministrativo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteProvento">DeleteProvento</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Provento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteRazaoAuxiliarSubConta">DeleteRazaoAuxiliarSubConta</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘RazaoAuxiliarSubConta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteReducao">DeleteReducao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘Reducao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteReducaoParcial">DeleteReducaoParcial</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ReducaoParcial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteRendimentosDirigentesConselheiros">DeleteRendimentosDirigentesConselheiros</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘RendimentosDirigentesConselheiros’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteReprocessamentoReparoConsumo">DeleteReprocessamentoReparoConsumo</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ReprocessamentoReparoConsumo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteReprocessamentoReparoProduto">DeleteReprocessamentoReparoProduto</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ReprocessamentoReparoProduto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteResponsavelArquivoDigital">DeleteResponsavelArquivoDigital</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ResponsavelArquivoDigital’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteRoyaltiesRecebidosPagosBREX">DeleteRoyaltiesRecebidosPagosBREX</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘RoyaltiesRecebidosPagosBREX’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteSaldoContabil">DeleteSaldoContabil</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘SaldoContabil’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteSaldoFechamento">DeleteSaldoFechamento</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘SaldoFechamento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteSuspensaoImposto">DeleteSuspensaoImposto</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘SuspensaoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteTipoMovimentacaoInventario">DeleteTipoMovimentacaoInventario</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘TipoMovimentacaoInventario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteTransferenciaSaldoContabil">DeleteTransferenciaSaldoContabil</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘TransferenciaSaldoContabil’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteTransporteRodoviarioComplemento">DeleteTransporteRodoviarioComplemento</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘TransporteRodoviarioComplemento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteTransporteRodoviarioNotaFiscal">DeleteTransporteRodoviarioNotaFiscal</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘TransporteRodoviarioNotaFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteUnidadeMedida">DeleteUnidadeMedida</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘UnidadeMedida’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteUnidadeMedidaConversao">DeleteUnidadeMedidaConversao</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘UnidadeMedidaConversao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteValorAgregado">DeleteValorAgregado</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ValorAgregado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteValorRetidoFontePISCOFINS">DeleteValorRetidoFontePISCOFINS</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘ValorRetidoFontePISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FDeleteVendasComercialExportadoraFEE">DeleteVendasComercialExportadoraFEE</a></td>
+    <td>Delete Method</td>
+    <td class='markdown-description'><p>Este método faz a exclusão de um objeto do tipo ‘VendasComercialExportadoraFEE’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveApuracaoAjuste">SaveApuracaoAjuste</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ApuracaoAjuste’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveApuracaoAjusteDocumentacao">SaveApuracaoAjusteDocumentacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ApuracaoAjusteDocumentacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveApuracaoAjusteProcesso">SaveApuracaoAjusteProcesso</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ApuracaoAjusteProcesso’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveApuracaoContribuicaoPrevidenciaria">SaveApuracaoContribuicaoPrevidenciaria</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ApuracaoContribuicaoPrevidenciaria’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveApuracaoImposto">SaveApuracaoImposto</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ApuracaoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveApuracaoImpostoIPI">SaveApuracaoImpostoIPI</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ApuracaoImpostoIPI’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveApuracaoInformacaoAdicional">SaveApuracaoInformacaoAdicional</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ApuracaoInformacaoAdicional’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveArrecadacaoReferenciado">SaveArrecadacaoReferenciado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ArrecadacaoReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveAtividadeIncentivadaPJ">SaveAtividadeIncentivadaPJ</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘AtividadeIncentivadaPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveAtivoImobilizadoPISCOFINS">SaveAtivoImobilizadoPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘AtivoImobilizadoPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveAtivoImobilizadoPISCOFINSProcessoReferenciado">SaveAtivoImobilizadoPISCOFINSProcessoReferenciado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘AtivoImobilizadoPISCOFINSProcessoReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveAtivosExterior">SaveAtivosExterior</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘AtivosExterior’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveBaseCalculoIncentivosFiscais">SaveBaseCalculoIncentivosFiscais</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘BaseCalculoIncentivosFiscais’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveBemCIAP">SaveBemCIAP</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘BemCIAP’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveBens">SaveBens</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Bens’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCalculoIsencaoReducaoImpostoSobreLucroRealIRPJ">SaveCalculoIsencaoReducaoImpostoSobreLucroRealIRPJ</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CalculoIsencaoReducaoImpostoSobreLucroRealIRPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCalculoIsencaoReducaoLucroPresumido">SaveCalculoIsencaoReducaoLucroPresumido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CalculoIsencaoReducaoLucroPresumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCampoAdicional">SaveCampoAdicional</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CampoAdicional’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCentroCusto">SaveCentroCusto</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CentroCusto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCIAPOutrosCreditos">SaveCIAPOutrosCreditos</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CIAPOutrosCreditos’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCodigoAglutinacao">SaveCodigoAglutinacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CodigoAglutinacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCodigoAglutinacaoCentroCusto">SaveCodigoAglutinacaoCentroCusto</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CodigoAglutinacaoCentroCusto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveComercioEletronico">SaveComercioEletronico</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ComercioEletronico’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCompOperPer">SaveCompOperPer</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CompOperPer’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveConsOperPer">SaveConsOperPer</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ConsOperPer’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveConsOperPerProcRef">SaveConsOperPerProcRef</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ConsOperPerProcRef’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContabilFolhaPagamento">SaveContabilFolhaPagamento</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContabilFolhaPagamento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContabilista">SaveContabilista</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Contabilista’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContaContabilReferencial">SaveContaContabilReferencial</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContaContabilReferencial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContaContabilSubConta">SaveContaContabilSubConta</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContaContabilSubConta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContribuicaoDiferidaAnteriorPISCOFINS">SaveContribuicaoDiferidaAnteriorPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContribuicaoDiferidaAnteriorPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContribuicaoExtemporaneaPISCOFINS">SaveContribuicaoExtemporaneaPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContribuicaoExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContribuicaoPrevidenciariaConsolidada">SaveContribuicaoPrevidenciariaConsolidada</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContribuicaoPrevidenciariaConsolidada’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContribuicaoRetidaFontePISCOFINS">SaveContribuicaoRetidaFontePISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContribuicaoRetidaFontePISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveContribuicaoSocialExtemporaneaPISCOFINS">SaveContribuicaoSocialExtemporaneaPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ContribuicaoSocialExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveControleEstoque">SaveControleEstoque</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ControleEstoque’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCorrecaoApontamentoEstoque">SaveCorrecaoApontamentoEstoque</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CorrecaoApontamentoEstoque’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCorrecaoApontamentoRegistroFilho">SaveCorrecaoApontamentoRegistroFilho</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CorrecaoApontamentoRegistroFilho’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCorrecaoApontamentoRegistroPai">SaveCorrecaoApontamentoRegistroPai</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CorrecaoApontamentoRegistroPai’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCreditoDescontoContribuicaoSocialExtemporaneaPISCOFINS">SaveCreditoDescontoContribuicaoSocialExtemporaneaPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CreditoDescontoContribuicaoSocialExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCreditoExtemporaneoPISCOFINS">SaveCreditoExtemporaneoPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CreditoExtemporaneoPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCreditoFiscalPISCOFINS">SaveCreditoFiscalPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CreditoFiscalPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveCupomFiscalReferenciado">SaveCupomFiscalReferenciado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘CupomFiscalReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDaconCategoria">SaveDaconCategoria</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DaconCategoria’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDaconCategoriaProdutoAliquotas">SaveDaconCategoriaProdutoAliquotas</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DaconCategoriaProdutoAliquotas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDaconContasContabeis">SaveDaconContasContabeis</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DaconContasContabeis’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDadosSucessoras">SaveDadosSucessoras</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DadosSucessoras’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDebitoImposto">SaveDebitoImposto</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DebitoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDeclaracaoPaisPais">SaveDeclaracaoPaisPais</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DeclaracaoPaisPais’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDeclaracaoPaisPaisDeclaracao">SaveDeclaracaoPaisPaisDeclaracao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DeclaracaoPaisPaisDeclaracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDeclaracaoPaisPaisEntidade">SaveDeclaracaoPaisPaisEntidade</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DeclaracaoPaisPaisEntidade’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDeclaracaoPaisPaisObservacao">SaveDeclaracaoPaisPaisObservacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DeclaracaoPaisPaisObservacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDeducaoDARF">SaveDeducaoDARF</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DeducaoDARF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDeducaoDiversasPISCOFINS">SaveDeducaoDiversasPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DeducaoDiversasPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDemonstracaoLucroExploracaoIRPJ">SaveDemonstracaoLucroExploracaoIRPJ</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DemonstracaoLucroExploracaoIRPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDemonstracaoReceitasIncentivadas">SaveDemonstracaoReceitasIncentivadas</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DemonstracaoReceitasIncentivadas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDemonstrativoLivroCaixa">SaveDemonstrativoLivroCaixa</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DemonstrativoLivroCaixa’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDesmontagemItemDestino">SaveDesmontagemItemDestino</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DesmontagemItemDestino’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDesmontagemItemOrigem">SaveDesmontagemItemOrigem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DesmontagemItemOrigem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDetalhamentoContribuicaoSocialExtemporaneaPISCOFINS">SaveDetalhamentoContribuicaoSocialExtemporaneaPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DetalhamentoContribuicaoSocialExtemporaneaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDetalheApuracaoContribuicaoPrevidenciario">SaveDetalheApuracaoContribuicaoPrevidenciario</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DetalheApuracaoContribuicaoPrevidenciario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDetalheExportacaoComercialExportadora">SaveDetalheExportacaoComercialExportadora</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DetalheExportacaoComercialExportadora’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDoacoesEleitorais">SaveDoacoesEleitorais</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DoacoesEleitorais’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocFiscalEmitidoECF">SaveDocFiscalEmitidoECF</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocFiscalEmitidoECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocFiscalEmitidoECFItem">SaveDocFiscalEmitidoECFItem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocFiscalEmitidoECFItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscal">SaveDocumentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalFatura">SaveDocumentoFiscalFatura</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalFatura’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalImpostoRetido">SaveDocumentoFiscalImpostoRetido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalImpostoRetido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalInfoComplementar">SaveDocumentoFiscalInfoComplementar</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalInfoComplementar’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalItem">SaveDocumentoFiscalItem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalItemRessarcimentoICMS">SaveDocumentoFiscalItemRessarcimentoICMS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalItemRessarcimentoICMS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalOperacaoArmas">SaveDocumentoFiscalOperacaoArmas</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalOperacaoArmas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalOperacaoMedicamentoItem">SaveDocumentoFiscalOperacaoMedicamentoItem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalOperacaoMedicamentoItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalOperacaoVeiculoNovo">SaveDocumentoFiscalOperacaoVeiculoNovo</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalOperacaoVeiculoNovo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalParcela">SaveDocumentoFiscalParcela</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalParcela’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveDocumentoFiscalReferenciado">SaveDocumentoFiscalReferenciado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘DocumentoFiscalReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEntidadeReferencial">SaveEntidadeReferencial</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EntidadeReferencial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEquipamentoECF">SaveEquipamentoECF</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EquipamentoECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEstabelecimentoAberturaPISCOFINS">SaveEstabelecimentoAberturaPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EstabelecimentoAberturaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEstabelecimentoFiscal">SaveEstabelecimentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EstabelecimentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEstabelecimentoFiscalDACON">SaveEstabelecimentoFiscalDACON</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EstabelecimentoFiscalDACON’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEstabelecimentoFiscalDIPJ">SaveEstabelecimentoFiscalDIPJ</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EstabelecimentoFiscalDIPJ’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEstabelecimentoFiscalECF">SaveEstabelecimentoFiscalECF</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EstabelecimentoFiscalECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveEventoIncorporacaoFusaoCisaoPISCOFINS">SaveEventoIncorporacaoFusaoCisaoPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘EventoIncorporacaoFusaoCisaoPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveExportacaoDocumentoFiscal">SaveExportacaoDocumentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ExportacaoDocumentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveExportacaoIndireta">SaveExportacaoIndireta</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ExportacaoIndireta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveFCIItem">SaveFCIItem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘FCIItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveFolhaPagamento">SaveFolhaPagamento</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘FolhaPagamento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveFolhaSalariosPIS">SaveFolhaSalariosPIS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘FolhaSalariosPIS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveFormularioCancelado">SaveFormularioCancelado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘FormularioCancelado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveFormularioUtilizado">SaveFormularioUtilizado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘FormularioUtilizado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveFornecedoresClientes">SaveFornecedoresClientes</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘FornecedoresClientes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveFundoClubeInvestimento">SaveFundoClubeInvestimento</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘FundoClubeInvestimento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveGNRE">SaveGNRE</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘GNRE’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveGuiaPrevidenciaSocial">SaveGuiaPrevidenciaSocial</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘GuiaPrevidenciaSocial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveHistoricoPadrao">SaveHistoricoPadrao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘HistoricoPadrao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExt">SaveIdentPartExt</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExt’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExtConsolidacao">SaveIdentPartExtConsolidacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExtConsolidacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExtEstruturaSocietaria">SaveIdentPartExtEstruturaSocietaria</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExtEstruturaSocietaria’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExtImpostoPagoExterior">SaveIdentPartExtImpostoPagoExterior</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExtImpostoPagoExterior’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExtPeriodoApuracao">SaveIdentPartExtPeriodoApuracao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExtPeriodoApuracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExtPrejuizoAcumulado">SaveIdentPartExtPrejuizoAcumulado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExtPrejuizoAcumulado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExtRegimeCaixa">SaveIdentPartExtRegimeCaixa</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExtRegimeCaixa’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIdentPartExtRendaAtivaPassiva">SaveIdentPartExtRendaAtivaPassiva</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IdentPartExtRendaAtivaPassiva’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIndustrializacaoInsumoConsumido">SaveIndustrializacaoInsumoConsumido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IndustrializacaoInsumoConsumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveIndustrializacaoItemProduzido">SaveIndustrializacaoItemProduzido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘IndustrializacaoItemProduzido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInfoPeriodosAnteriores">SaveInfoPeriodosAnteriores</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InfoPeriodosAnteriores’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInfOptPAESImunesIsentas">SaveInfOptPAESImunesIsentas</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InfOptPAESImunesIsentas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInfOptREFISImunesIsentas">SaveInfOptREFISImunesIsentas</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InfOptREFISImunesIsentas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInformacaoAdicionalDiferidaPISCOFINS">SaveInformacaoAdicionalDiferidaPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InformacaoAdicionalDiferidaPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInformacaoComplementar">SaveInformacaoComplementar</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InformacaoComplementar’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInformacaoExportacao">SaveInformacaoExportacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InformacaoExportacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInscricaoEstadualEstabelecimentoFiscal">SaveInscricaoEstadualEstabelecimentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InscricaoEstadualEstabelecimentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInsumoConsumido">SaveInsumoConsumido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InsumoConsumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInsumoRelacionado">SaveInsumoRelacionado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InsumoRelacionado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInventario">SaveInventario</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Inventario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveInventarioInformacaoComplementar">SaveInventarioInformacaoComplementar</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘InventarioInformacaoComplementar’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveItem">SaveItem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Item’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveItemAlteracao">SaveItemAlteracao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ItemAlteracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveItemConsumo">SaveItemConsumo</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ItemConsumo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveItemEstabelecimentoFiscal">SaveItemEstabelecimentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ItemEstabelecimentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveItemProduzido">SaveItemProduzido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ItemProduzido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveLancamentoContabil">SaveLancamentoContabil</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘LancamentoContabil’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveLivroRazaoParametrizavelCampo">SaveLivroRazaoParametrizavelCampo</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘LivroRazaoParametrizavelCampo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveLivroRazaoParametroValor">SaveLivroRazaoParametroValor</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘LivroRazaoParametroValor’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveLocalColetaEntrega">SaveLocalColetaEntrega</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘LocalColetaEntrega’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveLotacao">SaveLotacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Lotacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveMovimentacao">SaveMovimentacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Movimentacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveMovimentacaoDocumentoFiscal">SaveMovimentacaoDocumentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘MovimentacaoDocumentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveMovimentacaoDocumentoFiscalItem">SaveMovimentacaoDocumentoFiscalItem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘MovimentacaoDocumentoFiscalItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveMovimentacaoLALUR">SaveMovimentacaoLALUR</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘MovimentacaoLALUR’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveMovimentoInventario">SaveMovimentoInventario</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘MovimentoInventario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveNaturezaOperacao">SaveNaturezaOperacao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘NaturezaOperacao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveObrigacaoRecolher">SaveObrigacaoRecolher</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ObrigacaoRecolher’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveObservacaoDocumentoLancamentoDetalhe">SaveObservacaoDocumentoLancamentoDetalhe</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ObservacaoDocumentoLancamentoDetalhe’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveObservacaoDocumentoLancamentoFiscal">SaveObservacaoDocumentoLancamentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ObservacaoDocumentoLancamentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveObservacaoLancamentoFiscal">SaveObservacaoLancamentoFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ObservacaoLancamentoFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOperExteriorImportExport">SaveOperExteriorImportExport</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OperExteriorImportExport’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOperExteriorImportExportContratantes">SaveOperExteriorImportExportContratantes</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OperExteriorImportExportContratantes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOperExteriorPVNV">SaveOperExteriorPVNV</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OperExteriorPVNV’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOptantesREFIS">SaveOptantesREFIS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OptantesREFIS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOptantesREFISOptantes">SaveOptantesREFISOptantes</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OptantesREFISOptantes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOutrasCompensacoes">SaveOutrasCompensacoes</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OutrasCompensacoes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOutrasInformacoesECF">SaveOutrasInformacoesECF</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OutrasInformacoesECF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOutrasInformacoesLucroPresumido">SaveOutrasInformacoesLucroPresumido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OutrasInformacoesLucroPresumido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOutrasInformacoesLucroReal">SaveOutrasInformacoesLucroReal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OutrasInformacoesLucroReal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOutrasMovimentacoes">SaveOutrasMovimentacoes</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OutrasMovimentacoes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOutrosDocumentosPISCOFINS">SaveOutrosDocumentosPISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OutrosDocumentosPISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveOutrosLancamentosInfoEconomicas">SaveOutrosLancamentosInfoEconomicas</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘OutrosLancamentosInfoEconomicas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSavePagamentoDARF">SavePagamentoDARF</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘PagamentoDARF’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSavePagamentoIndevido">SavePagamentoIndevido</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘PagamentoIndevido’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSavePagamentoRecebimentoExterior">SavePagamentoRecebimentoExterior</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘PagamentoRecebimentoExterior’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSavePagamentoRemessasServJurosDivRecBRExt">SavePagamentoRemessasServJurosDivRecBRExt</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘PagamentoRemessasServJurosDivRecBRExt’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveParceiro">SaveParceiro</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Parceiro’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveParceiroAlteracao">SaveParceiroAlteracao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ParceiroAlteracao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveParcelamentoImposto">SaveParcelamentoImposto</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ParcelamentoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveParticipacoesConsorciosEmpresas">SaveParticipacoesConsorciosEmpresas</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ParticipacoesConsorciosEmpresas’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveParticipacoesConsorciosEmpresasParticipantes">SaveParticipacoesConsorciosEmpresasParticipantes</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ParticipacoesConsorciosEmpresasParticipantes’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveParticipanteAcionario">SaveParticipanteAcionario</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ParticipanteAcionario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveParticipAvalMetodoEquivPatrimonial">SaveParticipAvalMetodoEquivPatrimonial</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ParticipAvalMetodoEquivPatrimonial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSavePedidoExterno">SavePedidoExterno</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘PedidoExterno’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSavePedidoExternoItem">SavePedidoExternoItem</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘PedidoExternoItem’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSavePlanoConta">SavePlanoConta</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘PlanoConta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveProcessoReferenciado">SaveProcessoReferenciado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ProcessoReferenciado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveProcessoReferenciadoAcaoJudicial">SaveProcessoReferenciadoAcaoJudicial</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ProcessoReferenciadoAcaoJudicial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveProcessoReferenciadoContribuicaoPrevidenciario">SaveProcessoReferenciadoContribuicaoPrevidenciario</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ProcessoReferenciadoContribuicaoPrevidenciario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveProcessoReferenciadoProcessoAdministrativo">SaveProcessoReferenciadoProcessoAdministrativo</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ProcessoReferenciadoProcessoAdministrativo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveProvento">SaveProvento</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Provento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveRazaoAuxiliarSubConta">SaveRazaoAuxiliarSubConta</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘RazaoAuxiliarSubConta’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveReducao">SaveReducao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘Reducao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveReducaoParcial">SaveReducaoParcial</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ReducaoParcial’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveRendimentosDirigentesConselheiros">SaveRendimentosDirigentesConselheiros</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘RendimentosDirigentesConselheiros’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveReprocessamentoReparoConsumo">SaveReprocessamentoReparoConsumo</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ReprocessamentoReparoConsumo’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveReprocessamentoReparoProduto">SaveReprocessamentoReparoProduto</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ReprocessamentoReparoProduto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveResponsavelArquivoDigital">SaveResponsavelArquivoDigital</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ResponsavelArquivoDigital’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveRoyaltiesRecebidosPagosBREX">SaveRoyaltiesRecebidosPagosBREX</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘RoyaltiesRecebidosPagosBREX’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveSaldoContabil">SaveSaldoContabil</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘SaldoContabil’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveSaldoFechamento">SaveSaldoFechamento</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘SaldoFechamento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveSuspensaoImposto">SaveSuspensaoImposto</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘SuspensaoImposto’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveTipoMovimentacaoInventario">SaveTipoMovimentacaoInventario</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘TipoMovimentacaoInventario’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveTransferenciaSaldoContabil">SaveTransferenciaSaldoContabil</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘TransferenciaSaldoContabil’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveTransporteRodoviarioComplemento">SaveTransporteRodoviarioComplemento</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘TransporteRodoviarioComplemento’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveTransporteRodoviarioNotaFiscal">SaveTransporteRodoviarioNotaFiscal</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘TransporteRodoviarioNotaFiscal’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveUnidadeMedida">SaveUnidadeMedida</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘UnidadeMedida’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveUnidadeMedidaConversao">SaveUnidadeMedidaConversao</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘UnidadeMedidaConversao’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveValorAgregado">SaveValorAgregado</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ValorAgregado’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveValorRetidoFontePISCOFINS">SaveValorRetidoFontePISCOFINS</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘ValorRetidoFontePISCOFINS’.</p>
+</td>
+</tr>
+<tr>
+    <td><a href="/developer-dot/api-reference%2Favataxbr%2Fcompliance%2Fmethods%2FSaveVendasComercialExportadoraFEE">SaveVendasComercialExportadoraFEE</a></td>
+    <td>Create/Update Method</td>
+    <td class='markdown-description'><p>Este método insere ou atualiza um objeto do tipo ‘VendasComercialExportadoraFEE’.</p>
+</td>
+</tr>
+    </tbody>
+</table>
+<br>
+</main>
+        </section>
+          
+    </div>
+    <footer>
+        <ul class="global">
+            <li><a href="https://www.avalara.com/"><span class="icon-sphere"></span>Avalara.com</a></li>
+            <li><a href="https://help.avalara.com/"><span class="icon-help"></span>Help Center</a></li>
+        </ul>
+
+
+        <ul class="social">
+            <li class="twitter"><a href="https://twitter.com/Avalara">Twitter</a></li>
+            <li class="facebook"><a href="https://www.facebook.com/avalara">Facebook</a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/company/avalara">LinkedIn</a></li>
+            <li class="youtube"><a href="https://www.youtube.com/user/Avalara1">Youtube</a></li>
+        </ul>
+        
+        
+
+
+        <ul class="legal">
+            <li>&copy; 2017 Avalara, Inc. All rights reserved</li>
+            <li><a href="https://www.avalara.com/site-terms/">Terms of use</a></li>
+            <li><a href="https://www.avalara.com/privacy-policy/">Privacy policy</a></li>
+        </ul>
+
+        <ul class="github">
+            <li class="social github-icon"><a href="https://github.com/Avalara/developer-dot/edit/master/dynamic/swagger/avataxbr/compliance.json"><span>GH</span> Edit this page on GitHub</a></li>
+
+        </ul>
+    </footer>
+
+    <script src="/developer-dot/public/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="/developer-dot/public/js/vendor/bootstrap.min.js"></script>
+    <script src="/developer-dot/public/js/site.js"></script>
+
+    
+    <script src="/developer-dot/public/js/vendor/aws-sdk-2.5.3.min.js"></script>
+    <script>
+        AWS.config.region = 'us-west-2';
+    </script>
+
+     
+
+    <!-- Adobe Dynamic Tag Manager -->
+    <script type="text/javascript">
+        _satellite.pageBottom();
+    </script>
+    <!-- End Adobe Dynamic Tag Manager -->
+</body>
+
+</html>
